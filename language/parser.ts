@@ -1744,7 +1744,7 @@ export default class Parser {
                   end: currentItem.position.range.line
                 };
 
-                expandDs(fileUri, currentNameToken, currentItem);
+                await expandDs(fileUri, currentNameToken, currentItem);
 
                 currentGroup = `structs`;
                 scope.addSymbol(currentItem);
